@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Pécé Air</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>babay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="site-name">babay</div>
+            <div class="nav-links">
+                <a href="#" id="homeLink">Home</a>
+                <a href="#" id="productsLink">Products</a>
+                <a href="#" id="checkoutLink" style="display:none;">Checkout</a>
+                <a href="#" id="contactLink" class="contact-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="homePage" class="home">
+        <h1 class="home-description">Welcome to babay, your go-to store for office products.</h1>
+        <img src="https://media.s-bol.com/nYO1PkOQL9yW/550x366.jpg" alt="Office Products" class="home-image">
+        <a href="#" id="contactLinkFooter" class="contact-link-footer">Contact Us</a>
+    </div>
+
+    <!-- Products Page -->
+    <div id="productsPage" class="products" style="display:none;">
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://cdn1.vente-unique.com/thumbnails/product/105/105689/product_raw/xs/bureau_343243.jpg" alt="Product 1">
+                <h3>Office Desk</h3>
+                <a href="#" class="more-info" onclick="showProductDetail(1)">More Info</a>
+                <a href="#" class="buy-now" onclick="showCheckoutPage()">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="https://i0.wp.com/dansmamaison.ma/wp-content/uploads/2020/03/Bureau-office-photo-reelle5.jpg?fit=1024%2C768&quality=89&ssl=1" alt="Product 2">
+                <h3>Office Chair</h3>
+                <a href="#" class="more-info" onclick="showProductDetail(2)">More Info</a>
+                <a href="#" class="buy-now" onclick="showCheckoutPage()">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="https://media.s-bol.com/nYO1PkOQL9yW/550x366.jpg" alt="Product 3">
+                <h3>Office Lamp</h3>
+                <a href="#" class="more-info" onclick="showProductDetail(3)">More Info</a>
+                <a href="#" class="buy-now" onclick="showCheckoutPage()">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Page -->
+    <div id="productDetailPage" class="product-detail" style="display:none;">
+        <div id="productImage"></div>
+        <p id="productDescription"></p>
+        <h3>Reviews</h3>
+        <div id="productReviews"></div>
+        <textarea id="reviewText" placeholder="Add a comment..."></textarea>
+        <button onclick="addReview()">Submit</button>
+    </div>
+
+    <!-- Checkout Page -->
+    <div id="checkoutPage" class="checkout" style="display:none;">
+        <form class="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="sa">Saudi Arabia</option>
+                <option value="ae">United Arab Emirates</option>
+                <option value="kw">Kuwait</option>
+                <option value="om">Oman</option>
+                <option value="bh">Bahrain</option>
+                <option value="qa">Qatar</option>
+            </select>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <button type="submit">Complete Purchase</button>
+        </form>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contactPage" class="contact-page" style="display:none;">
+        <p>Contact us at:</p>
+        <p>Email: support@babay.com</p>
+        <p>WhatsApp: +1234567890</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
